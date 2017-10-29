@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PopupManager : MonoBehaviour {
 
@@ -28,5 +29,10 @@ public class PopupManager : MonoBehaviour {
         {
             Time.timeScale = 1;
         }
+    }
+
+    public void BackButton()
+    {
+        SceneManager.LoadScene(1);
     }
 }
